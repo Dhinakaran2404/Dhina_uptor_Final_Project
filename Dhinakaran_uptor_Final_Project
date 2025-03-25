@@ -1,0 +1,52 @@
+**Project Title: Revenue Prediction and Customer Segmentation Using Machine Learning**
+
+**Objective:**
+This project aims to analyze Netflix sales data and apply machine learning techniques to predict revenue and segment customer behavior using supervised and unsupervised learning algorithms.
+
+**Dataset:**
+The dataset consists of the following columns:
+- **Month**: The time period of data collection.
+- **Region**: Geographic location.
+- **Subscribers**: Number of active users.
+- **Revenue ($)**: Total revenue generated.
+- **Ads Revenue ($)**: Revenue from advertisements.
+- **Engagement (hrs)**: Total hours of user engagement.
+
+**Supervised Learning - Revenue Prediction:**
+- **Algorithm Used**: Linear Regression
+- **Features Used**: Subscribers, Ads Revenue ($), Engagement (hrs)
+- **Target Variable**: Revenue ($)
+- **Process:**
+  - The dataset was split into training (80%) and testing (20%) sets.
+  - A Linear Regression model was trained on the training set.
+  - The model was evaluated using Mean Squared Error (MSE) and R-squared (R²) score.
+- **Results:**
+  - **MSE:** 2,075,788,100,286.15
+  - **R² Score:** 0.89 (indicating strong predictive performance)
+- **Visualization:**
+  - A scatter plot was generated to compare actual vs predicted revenue.
+
+**Unsupervised Learning - Customer Segmentation:**
+- **Algorithm Used**: K-Means Clustering
+- **Features Used**: Subscribers, Revenue ($), Ads Revenue ($), Engagement (hrs)
+- **Process:**
+  - Data was standardized using the StandardScaler.
+  - The optimal number of clusters was determined using the Elbow Method.
+  - K-Means clustering was applied with k=3.
+  - Cluster labels were assigned to each data point.
+- **Results:**
+  - The dataset was successfully segmented into 3 clusters based on sales trends.
+- **Visualization:**
+  - The Elbow Method plot was generated to determine the optimal number of clusters.
+  - A scatter plot was created to visualize the clusters, using Subscribers and Revenue as axes.
+
+**Conclusion:**
+- Linear Regression effectively predicted revenue with a high R² score of 0.89.
+- K-Means clustering helped group customers into meaningful segments for better marketing strategies.
+- The insights gained from this project can help businesses optimize revenue and target customers more efficiently.
+
+**Future Improvements:**
+- Experiment with advanced regression models like Decision Trees or Random Forest.
+- Use more features to improve revenue prediction accuracy.
+- Apply other clustering techniques like DBSCAN for better segmentation.
+
