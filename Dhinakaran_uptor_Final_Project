@@ -1,3 +1,4 @@
+Netflix Data Analysis
 Project Report: Predicting Revenue & Clustering Sales Trends
 1. Introduction
 The goal of this project is to analyze sales trends and predict revenue using a dataset containing information about Netflix subscribers, revenue, advertisements, and engagement. This project employs both Supervised Learning (Regression) to predict revenue and Unsupervised Learning (Clustering) to identify sales patterns.
